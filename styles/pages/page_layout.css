@@ -1,0 +1,33 @@
+/*  
+
+    Specifikt for layout siden.
+
+*/
+.page-layout {
+    
+    /* Hvis deene side skal have specifikke betingelser */
+
+}
+
+.page-layout .btn{
+    
+    
+
+}
+
+.page-layout .sub-navigation {
+    position: relative;
+    display:  inline-block;
+    width: 100%;
+}
+
+
+
+@media screen and (min-width: 768px)  {
+
+    .page-layout {
+    
+
+    }
+
+}

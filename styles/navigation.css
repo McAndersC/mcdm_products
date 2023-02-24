@@ -1,0 +1,231 @@
+:root {
+     /*
+        Navigation
+    */
+
+    --navigation-height : 60px;
+
+    --navigation-dropshadow : drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.2));
+
+    --navigation-background : var(--color-mine-shaft);
+  
+    --navigation-caret : var(--color-white);
+    --navigation-caret-hover : var(--color-jordy-blue);
+
+    --sub-navigation-background : var(--color-white);
+    --sub-navigation-item-background : var(--color-white);
+    --sub-navigation-item-text : var(--color-black);
+    --sub-navigation-item-background-hover : var(--color-jordy-blue);
+    --sub-navigation-item-text-hover : var(--color-white);
+
+    --sub-navigation-item-active-background : var(--color-jordy-blue);
+    --sub-navigation-item-active-text : var(--color-white);
+
+}
+
+/*
+
+
+    Profile & Sign in / out
+
+
+*/
+
+.sub-navigation .btn {
+    width: 60%;
+    margin: 10px auto;
+    min-width: 120px;
+}
+
+
+
+/*
+
+    Navigation
+
+*/
+
+.navigation {
+
+    width: 100vw;
+    height: var(--navigation-height);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+
+}
+
+/* Placering af sub-navigation */
+.navigation .sub-navigation {
+    position: fixed;
+    top: calc(var(--navigation-height) - 10px);
+    right: 20px;
+}
+
+
+/*
+
+    Navigation Bar
+
+*/
+
+.navigation-bar {
+   
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    filter: var(--navigation-dropshadow);
+    background-color: var(--navigation-background);
+}
+
+/*
+
+    Navigation Logo (left side)
+
+*/
+
+.navigation-bar .navigation-bar-logo {
+    margin-left: 20px;
+    width: 40px;
+}
+
+.navigation-bar .navigation-bar-logo .logo{
+    display: flex;
+    height: var(--navigation-height);
+    width: 40px;
+}
+
+
+
+
+/*
+
+    Navigation Action (right side)
+
+*/
+
+.navigation-bar .navigation-bar-action {
+
+    margin-right: 20px;
+    display: flex;
+    color: var(--navigation-caret);
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    cursor: pointer;
+    gap: 5px;
+    font-size: 10px;
+    height: var(--navigation-height);
+  
+}
+
+.navigation-bar .action:hover .fa{
+
+    color: var(--navigation-caret-hover);
+
+}
+
+.navigation-bar .navigation-bar-action .img-avatar {
+    width : 40px;
+    border-radius: 25px;
+
+}
+
+
+
+
+/* 
+
+
+    Sub Navigation
+
+
+*/
+
+.sub-navigation ul, ol
+{
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.sub-navigation {
+
+    background-color: var(--sub-navigation-background);
+    min-width: 200px;
+    display: none;
+    filter: var(--navigation-dropshadow);
+    font-size: 12px;
+
+}
+
+.sub-navigation.active{
+    display: block;
+}
+
+/* 
+
+
+    Sub Navigation Profile
+
+
+*/
+
+.sub-navigation-profile {
+
+    text-align: center;
+    margin: 20px 0;
+    display: block;
+
+}
+
+.sub-navigation-profile img {
+
+    border-radius: 50px;
+
+}
+
+
+/* 
+
+
+    Sub Navigation Nav Item
+
+
+*/
+
+.nav-item a:hover {
+    background-color: var(--sub-navigation-item-background-hover);
+    color: var(--sub-navigation-item-text-hover);
+}
+
+.nav-item a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+    display: block;
+    background-color: var(--sub-navigation-item-background);
+}
+
+
+.nav-item.active a {
+    background-color: var(--sub-navigation-item-active-background);
+    color : var(--sub-navigation-item-active-text);
+}
+
+.nav-item a {
+    text-align: left;
+    color: var(--sub-navigation-item-text);
+}
+
+.nav-item .fa {
+
+  margin-right: 5px;
+  
+}
+
+

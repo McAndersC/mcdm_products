@@ -1,0 +1,39 @@
+
+/*
+
+    Glider specifikke css "overwrite" og tilpasninger, farver osv.
+
+*/
+.glider {
+
+    width: 100%;
+
+}
+
+.glider-dot.active {
+
+    background-color : var(--color-jordy-blue);
+
+}
+
+.glider-dot {
+
+    background-color : var(--color-white);
+
+}
+
+.glider-dots {
+
+    margin-top: 10px;
+
+}
+
+
+
+.glider .product-item {
+    margin : 0 10px;
+    filter : none;
+}
+
+
+

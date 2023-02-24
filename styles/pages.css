@@ -1,0 +1,15 @@
+/*
+
+    Vores genereller page-wrapper,
+    Giver vores 20px padding i siderne.
+    Giver 100% Bredde,
+    Giver 50 pixel til bunden af hver side.
+
+*/
+.page-wrapper {
+   
+    padding: calc(var(--navigation-height) + 20px) 20px 0 20px;
+    width : 100%;
+    margin: 0 auto 50px auto;
+    
+}

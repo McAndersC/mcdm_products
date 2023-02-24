@@ -1,0 +1,52 @@
+/*
+
+    Frontpage Section
+
+*/
+.section {
+    
+    height: 100vh;
+    width: 100vw;
+    max-width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    color: var(--section-base-text-color);
+    background-color: var(--section-base-background-color);
+
+}
+
+/*
+
+    Frontpage Section Tema Farver
+
+*/
+.section.theme-shady {
+    
+    color: var(--color-mine-shaft);
+    background-color: var(--section-base-background-color);
+
+}
+
+.section.theme-danger {
+
+    background-color: red;
+
+}
+
+.section.theme-success {
+
+    background-color: green;
+
+}
+
+.section.theme-beige {
+
+    background-color: var(--color-beige);
+
+}
+
+
+
+

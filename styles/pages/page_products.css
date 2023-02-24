@@ -1,0 +1,54 @@
+/*
+
+
+    Products Page
+
+
+*/
+
+
+.products-wrapper {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.products-wrapper .product-item {
+    margin-bottom: 25px;
+}
+
+
+@media screen and (min-width: 768px)  {
+
+    .products-carrousel, .products-frontpage-carrousel {
+        
+        margin-right: -10px;
+        margin-left: -10px;
+
+    }
+    
+    .products-wrapper {
+
+        flex-direction: row;
+        gap: 20px;
+    
+    }
+
+    .page-products {
+    
+        width: 768px;
+
+        margin: auto auto;
+    
+    }
+
+    .page-products .product-item {
+    
+        width: calc(50% - 15px);
+    
+    }
+
+}

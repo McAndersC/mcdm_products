@@ -1,0 +1,129 @@
+/*
+
+    Buttons.
+
+    Layout til knapper brugt genrelt på sitet.
+
+*/
+
+/* 
+    
+    Vores "Grund" Knap klasse. Default
+    
+*/
+.btn {
+
+    background-color: black;
+    color: #fff;
+    text-align: center;
+
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 100%;
+    line-height: 1.6rem;
+    font-size: 1.6rem;
+    
+    user-select: none;
+    cursor: pointer;
+}
+
+.btn div {
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    
+}
+
+.btn div span{
+
+    color: #fff;
+    
+}
+
+.btn div a{
+
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.btn div .fa {
+    font-size: 2.8rem;
+    color:#fff
+}
+
+
+/*
+
+    Default Effekt.
+
+*/
+
+.btn:hover {
+    background-color: #7FC3F1;
+   
+}
+
+.btn:hover .btn-container span {
+    color: #000;
+
+}
+
+.btn:hover .btn-container a {
+    color: #000;
+
+}
+
+.btn:hover .btn-container .fa {
+    color: #fff;
+
+}
+
+/*
+
+    Størrelser.
+
+    Vi har small 
+*/
+
+.btn.btn-sm {
+
+    line-height: 1.2;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+
+}
+
+.btn.btn-sm div .fa {
+    font-size: 1.8rem;
+}
+
+.btn.btn-sm div {
+    gap: 5px;
+}
+
+/*
+
+    Aligning. Vi kan centrere indholdet med denne hjælpe klasse.
+*/
+
+.btn.btn-center div {
+    justify-content: center;
+}
+
+
+/*
+
+    Vi laver en "Tema udgave af vores default knap"
+*/
+
+.btn.btn-success {
+    background-color: green;
+}
+
+.btn.btn-success:hover {
+    background-color: goldenrod;
+   
+}

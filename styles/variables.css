@@ -1,0 +1,48 @@
+
+/*  
+
+    Henter Font
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700&display=swap');
+
+
+/*  
+
+    Sætter vaiabler
+
+*/
+:root {
+
+    /*
+        Colors
+    */
+    --color-beige : #f5f5dc;
+    --color-white : #fff;
+    --color-mine-shaft : #333;
+    --color-jordy-blue : #7FC3F1;
+    --color-black : #000;
+    --color-white : #FFF;
+
+
+    /*
+        Fonts
+    */
+    --main-font-family : 'Titillium Web', sans-serif;
+    
+    
+    /* 
+        Base 
+    */
+    --body-background : var(--color-beige);
+    --body-text : var(--color-black);
+
+    /*  
+        Frontpage Section Standards
+    */
+    --section-base-background-color : var(--color-mine-shaft);
+    --section-base-text-color : var(--color-white);
+
+}
+
+
